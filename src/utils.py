@@ -10,7 +10,14 @@ def get_data(path):
 
 
 def select_data(data):
-    pass
+    '''Get transaction data and return a list of successfully completed transactions'''
+    selected_data = []
+
+    for transaction in data:
+        if 'state' in transaction and transaction['state'] == 'EXECUTED':
+            selected_data.append(transaction)
+
+    return selected_data
 
 
 def sort_data(data):
