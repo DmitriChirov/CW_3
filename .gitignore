@@ -2,3 +2,4 @@
 --pycache--/
 *.py[cod]
 *$py.class
+tests/test_operations.json
