@@ -21,7 +21,9 @@ def select_data(data):
 
 
 def sort_data(data):
-    pass
+    '''Get transaction data and return a list of the last five transactions'''
+    data = sorted(data, key=lambda x: x["date"], reverse=True)
+    return data[:5]
 
 
 def format_data(data):
