@@ -2,7 +2,7 @@ import pytest
 
 @pytest.fixture
 def test_file():
-    return '/home/dm-nb-lenovo/SkyPro_Study/CW_3-Chirov/tests/test_operations.json'
+    return 'test_operations.json'
 
 @pytest.fixture
 def test_data():
